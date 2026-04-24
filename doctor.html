@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Okonkwo Family Clinic — Wuse, Abuja | Sample by Shiktra Wudiri David</title>
+<meta name="description" content="Sample doctor website built by Shiktra Wudiri David — warm, professional family medicine clinic in Wuse II, Abuja. Book appointments on WhatsApp." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { colors: { navy: '#0B2948', navy2: '#163455', steel: '#3A5A7D', mist: '#F4F7FB', mist2: '#E8EEF6', sky: '#2F80C7', teal: '#0E8E8E', gold: '#C8A24A', wa: '#25D366', wadark: '#128C7E' }, fontFamily: { display: ['Lora', 'Georgia', 'serif'], sans: ['Inter', 'system-ui', 'sans-serif'] } } } };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #F4F7FB; color: #0B2948; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #2F80C7; }
+  .display-italic { font-style: italic; font-weight: 500; }
+  .hair-divider { height: 1px; background: linear-gradient(to right, transparent, #2F80C7 20%, #2F80C7 80%, transparent); opacity: 0.25; }
+  @keyframes waPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55), 0 10px 30px -8px rgba(18, 140, 126, 0.5); } 50% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0), 0 10px 30px -8px rgba(18, 140, 126, 0.5); } }
+  .wa-pulse { animation: waPulse 2.4s ease-in-out infinite; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-up { animation: fadeUp 0.9s ease-out both; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .float-wa { bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); }
+  .nav-blur { backdrop-filter: saturate(140%) blur(10px); -webkit-backdrop-filter: saturate(140%) blur(10px); background: rgba(244, 247, 251, 0.85); border-bottom: 1px solid rgba(47, 128, 199, 0.15); }
+  .service-card { transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
+  .service-card:hover { transform: translateY(-3px); border-color: #2F80C7 !important; box-shadow: 0 20px 40px -20px rgba(11, 41, 72, 0.2); }
+  .builder-banner { background: #0B2948; }
+  .cross-pattern { background-image: radial-gradient(rgba(47, 128, 199, 0.08) 2px, transparent 2px); background-size: 28px 28px; }
+  .check-icon::before { content: "✓"; font-weight: 700; color: #0E8E8E; margin-right: 0.5rem; }
+</style>
+</head>
+<body>
+
+<div class="builder-banner text-mist text-center text-xs py-2 px-4">
+  Sample website · <a href="index.html" class="underline hover:text-gold font-semibold">← Back to Shiktra's portfolio</a>
+</div>
+
+<nav class="nav-blur sticky top-0 inset-x-0 z-40">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2">
+      <span class="text-sky font-display text-2xl leading-none">✛</span>
+      <span class="font-display text-navy text-base sm:text-lg tracking-tight">Dr. Okonkwo <span class="display-italic text-steel">Family Clinic</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-sm text-navy/75 font-medium">
+      <a href="#services" class="hover:text-sky transition">Services</a>
+      <a href="#doctor" class="hover:text-sky transition">Our Doctor</a>
+      <a href="#visit" class="hover:text-sky transition">Visit Hours</a>
+      <a href="#fees" class="hover:text-sky transition">Fees</a>
+      <a href="#contact" class="hover:text-sky transition">Contact</a>
+    </div>
+    <a href="https://wa.me/2348023456789?text=Hi,%20I%20want%20to%20book%20an%20appointment%20at%20Dr.%20Okonkwo%20Clinic" class="hidden sm:inline-flex items-center gap-2 bg-wa hover:bg-wadark text-white text-sm font-semibold px-4 py-2 rounded-full transition">
+      <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+      Book Appointment
+    </a>
+  </div>
+</nav>
+
+<header id="top" class="relative pt-16 pb-20 sm:pt-20 sm:pb-28 overflow-hidden cross-pattern">
+  <div aria-hidden="true" class="absolute -top-20 -right-24 w-80 h-80 rounded-full bg-sky/10 blur-3xl"></div>
+  <div aria-hidden="true" class="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-teal/10 blur-3xl"></div>
+  <div class="relative max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7 fade-up">
+      <span class="eyebrow">Wuse II · Abuja · Since 2014</span>
+      <h1 class="mt-4 font-display text-navy text-[2.4rem] leading-[1.05] sm:text-5xl lg:text-6xl tracking-tight">
+        Family medicine,<br/>
+        <span class="display-italic text-steel">delivered with care.</span>
+      </h1>
+      <p class="mt-6 text-navy/75 text-lg sm:text-xl max-w-xl leading-relaxed">
+        General consultations, children's health, chronic care, and minor procedures — in a calm clinic, by a doctor who will remember your name the next time you visit.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <a href="https://wa.me/2348023456789?text=Hi,%20I%20want%20to%20book%20an%20appointment%20at%20Dr.%20Okonkwo%20Clinic" class="wa-pulse inline-flex items-center gap-3 bg-wa hover:bg-wadark text-white font-semibold px-7 py-4 rounded-full text-base sm:text-lg transition">
+          <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a href="tel:+2348023456789" class="inline-flex items-center gap-2 text-navy font-semibold underline underline-offset-8 decoration-sky decoration-2 hover:text-sky transition">
+          Or call: +234 802 345 6789
+        </a>
+      </div>
+      <div class="mt-10 grid grid-cols-3 gap-6 max-w-xl text-sm">
+        <div><div class="font-display text-3xl text-sky">12</div><div class="text-navy/60 mt-1">years serving<br/>Abuja families</div></div>
+        <div><div class="font-display text-3xl text-sky">5,000+</div><div class="text-navy/60 mt-1">patients<br/>cared for</div></div>
+        <div><div class="font-display text-3xl text-sky">MDCN</div><div class="text-navy/60 mt-1">licensed<br/>& accredited</div></div>
+      </div>
+    </div>
+    <div class="lg:col-span-5 fade-up" style="animation-delay: 180ms;">
+      <div class="relative">
+        <div class="absolute -inset-3 bg-sky/20 rounded-[2rem] rotate-2"></div>
+        <div class="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-navy/25 border border-sky/30">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=900&q=80" alt="Dr. Okonkwo at the clinic" class="w-full h-[460px] sm:h-[540px] object-cover" />
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-mist border border-sky/40 rounded-2xl shadow-lg px-5 py-4">
+          <div class="eyebrow">Open today</div>
+          <div class="font-display text-navy text-lg">Mon–Sat · 8am–6pm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<section id="services" class="py-20 sm:py-24">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl reveal">
+      <span class="eyebrow">Services</span>
+      <h2 class="mt-3 font-display text-navy text-4xl sm:text-5xl leading-tight">What we <span class="display-italic text-steel">treat.</span></h2>
+      <p class="mt-5 text-navy/70 text-lg">Everyday family health care, handled in-clinic with unhurried consultations and clear next steps. For emergencies, please go to the nearest hospital.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <article class="service-card reveal bg-white border border-navy/10 rounded-2xl p-7">
+        <div class="w-11 h-11 rounded-xl bg-sky/15 text-sky flex items-center justify-center font-display text-2xl">✛</div>
+        <h3 class="mt-5 font-display text-navy text-xl">General Consultation</h3>
+        <p class="mt-3 text-navy/70 text-sm leading-relaxed">Fevers, pain, infections, fatigue, general check-ups. Unhurried 20-minute consultations with clear diagnoses and next steps.</p>
+      </article>
+
+      <article class="service-card reveal bg-white border border-navy/10 rounded-2xl p-7">
+        <div class="w-11 h-11 rounded-xl bg-teal/15 text-teal flex items-center justify-center font-display text-2xl">♡</div>
+        <h3 class="mt-5 font-display text-navy text-xl">Children's Health</h3>
+        <p class="mt-3 text-navy/70 text-sm leading-relaxed">Immunisations, growth monitoring, childhood illnesses. A calm clinic where little ones feel safe — and mamas feel heard.</p>
+      </article>
+
+      <article class="service-card reveal bg-white border border-navy/10 rounded-2xl p-7">
+        <div class="w-11 h-11 rounded-xl bg-sky/15 text-sky flex items-center justify-center font-display text-2xl">♾</div>
+        <h3 class="mt-5 font-display text-navy text-xl">Chronic Care</h3>
+        <p class="mt-3 text-navy/70 text-sm leading-relaxed">Hypertension, diabetes, asthma — long-term management with monthly monitoring, medication review, and lifestyle guidance.</p>
+      </article>
+
+      <article class="service-card reveal bg-white border border-navy/10 rounded-2xl p-7">
+        <div class="w-11 h-11 rounded-xl bg-teal/15 text-teal flex items-center justify-center font-display text-2xl">⚕</div>
+        <h3 class="mt-5 font-display text-navy text-xl">Women's Health</h3>
+        <p class="mt-3 text-navy/70 text-sm leading-relaxed">Family planning counselling, routine screenings, pre-natal check-ups, and referrals to trusted specialists when needed.</p>
+      </article>
+
+      <article class="service-card reveal bg-white border border-navy/10 rounded-2xl p-7">
+        <div class="w-11 h-11 rounded-xl bg-sky/15 text-sky flex items-center justify-center font-display text-2xl">⋯</div>
+        <h3 class="mt-5 font-display text-navy text-xl">Minor Procedures</h3>
+        <p class="mt-3 text-navy/70 text-sm leading-relaxed">Wound care, suturing, ear syringing, injections, IV fluids. Small things handled quickly so you can get back to your day.</p>
+      </article>
+
+      <article class="service-card reveal bg-navy text-mist rounded-2xl p-7 border border-gold/40 relative overflow-hidden">
+        <div aria-hidden="true" class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-gold/15 blur-2xl"></div>
+        <div class="relative">
+          <div class="w-11 h-11 rounded-xl bg-gold/20 text-gold flex items-center justify-center font-display text-2xl">★</div>
+          <h3 class="mt-5 font-display text-mist text-xl">Annual Health Check</h3>
+          <p class="mt-3 text-mist/75 text-sm leading-relaxed">Comprehensive yearly review — vitals, labs, screenings, lifestyle conversation. Catch things early, live better longer.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<section id="doctor" class="py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <div class="lg:col-span-5 reveal order-2 lg:order-1">
+      <div class="relative">
+        <div class="absolute -inset-2 bg-teal/15 rounded-3xl -rotate-3"></div>
+        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=800&q=80" alt="Dr. Okonkwo" class="relative rounded-3xl w-full h-[500px] object-cover border border-sky/30 shadow-xl shadow-navy/15" />
+      </div>
+    </div>
+    <div class="lg:col-span-7 reveal order-1 lg:order-2">
+      <span class="eyebrow">Meet your doctor</span>
+      <h2 class="mt-3 font-display text-navy text-4xl sm:text-5xl leading-tight">Dr. Emeka Okonkwo, <span class="display-italic text-steel">MB;BS, MWACP.</span></h2>
+      <div class="mt-6 space-y-5 text-navy/80 text-lg leading-relaxed">
+        <p>Dr. Okonkwo graduated from the College of Medicine, University of Ibadan, and completed his family medicine residency at the National Hospital Abuja. For the past twelve years, he has been caring for families across Wuse, Maitama, and Garki.</p>
+        <p>His approach is simple: listen first, explain clearly, treat honestly. No pushing unnecessary tests, no rushing you out of the consulting room, no jargon that leaves you more confused than when you came in.</p>
+      </div>
+      <ul class="mt-8 space-y-2 text-navy/75">
+        <li class="check-icon">Licensed with the Medical and Dental Council of Nigeria (MDCN)</li>
+        <li class="check-icon">Member, West African College of Physicians (MWACP)</li>
+        <li class="check-icon">Fellow, Society of Family Physicians of Nigeria</li>
+        <li class="check-icon">Fluent in English and Igbo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<section id="fees" class="py-20 sm:py-24 bg-mist2/60">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl reveal">
+      <span class="eyebrow">Transparent fees</span>
+      <h2 class="mt-3 font-display text-navy text-4xl sm:text-5xl leading-tight">No surprises. <span class="display-italic text-steel">Ever.</span></h2>
+      <p class="mt-5 text-navy/70 text-lg">You'll know what you're paying before you walk into the consulting room.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 gap-5">
+      <div class="reveal bg-white rounded-2xl p-7 border border-navy/10 flex items-center justify-between">
+        <div><div class="font-display text-navy text-xl">First Consultation</div><div class="text-sm text-navy/60 mt-1">Includes full history & examination</div></div>
+        <div class="font-display text-2xl text-sky">₦15,000</div>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-7 border border-navy/10 flex items-center justify-between">
+        <div><div class="font-display text-navy text-xl">Follow-up Visit</div><div class="text-sm text-navy/60 mt-1">Within 30 days of first visit</div></div>
+        <div class="font-display text-2xl text-sky">₦8,000</div>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-7 border border-navy/10 flex items-center justify-between">
+        <div><div class="font-display text-navy text-xl">Children (under 12)</div><div class="text-sm text-navy/60 mt-1">Consultation & exam</div></div>
+        <div class="font-display text-2xl text-sky">₦10,000</div>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-7 border border-navy/10 flex items-center justify-between">
+        <div><div class="font-display text-navy text-xl">Annual Health Check</div><div class="text-sm text-navy/60 mt-1">45 minutes, includes basic labs</div></div>
+        <div class="font-display text-2xl text-sky">₦35,000</div>
+      </div>
+    </div>
+    <p class="mt-8 text-center text-navy/60 text-sm italic">Procedures, medications, and labs billed separately at cost. HMO clients accepted — please confirm your provider on WhatsApp.</p>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<section id="visit" class="py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-10 items-start">
+    <div class="lg:col-span-6 reveal">
+      <span class="eyebrow">When to come</span>
+      <h2 class="mt-3 font-display text-navy text-4xl sm:text-5xl leading-tight">Appointments <span class="display-italic text-steel">make everything easier.</span></h2>
+      <p class="mt-5 text-navy/70 text-lg max-w-lg">Book on WhatsApp the day before if you can. Walk-ins are welcome when a slot is free, but an appointment guarantees your time.</p>
+      <div class="mt-8 space-y-4">
+        <div class="bg-white border border-navy/10 rounded-xl p-5 flex justify-between items-center">
+          <div class="font-display text-navy text-lg">Monday – Friday</div>
+          <div class="text-navy/70">8:00am – 6:00pm</div>
+        </div>
+        <div class="bg-white border border-navy/10 rounded-xl p-5 flex justify-between items-center">
+          <div class="font-display text-navy text-lg">Saturday</div>
+          <div class="text-navy/70">9:00am – 2:00pm</div>
+        </div>
+        <div class="bg-mist2 border border-navy/10 rounded-xl p-5 flex justify-between items-center">
+          <div class="font-display text-navy/60 text-lg">Sunday</div>
+          <div class="text-navy/60 italic">Closed</div>
+        </div>
+      </div>
+    </div>
+    <aside class="lg:col-span-6 reveal">
+      <div class="bg-navy text-mist rounded-3xl p-8 sm:p-10 border border-sky/40 relative overflow-hidden">
+        <div aria-hidden="true" class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-sky/15 blur-3xl"></div>
+        <div aria-hidden="true" class="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-teal/20 blur-3xl"></div>
+        <div class="relative space-y-7">
+          <div><div class="eyebrow text-gold">The clinic</div><div class="mt-2 font-display text-2xl">12 Aminu Kano Crescent</div><div class="text-mist/75">Wuse II, Abuja (FCT), Nigeria</div></div>
+          <div class="h-px bg-sky/30"></div>
+          <div>
+            <div class="eyebrow text-gold">Book</div>
+            <a href="https://wa.me/2348023456789?text=Hi,%20I%20want%20to%20book%20an%20appointment%20at%20Dr.%20Okonkwo%20Clinic" class="block mt-2 font-display text-2xl hover:text-gold transition">WhatsApp: +234 802 345 6789</a>
+            <a href="tel:+2348023456789" class="text-mist/75 hover:text-gold transition">Call: same number</a>
+          </div>
+          <div class="h-px bg-sky/30"></div>
+          <div><div class="eyebrow text-gold">Emergency note</div><p class="mt-2 text-mist/80 leading-relaxed">For life-threatening emergencies please go to your nearest hospital or call 112. This clinic is for non-emergency care only.</p></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<section id="contact" class="py-20 sm:py-24">
+  <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center">
+    <span class="eyebrow">Ready to book?</span>
+    <h2 class="mt-3 font-display text-navy text-4xl sm:text-5xl leading-tight">One message, <span class="display-italic text-steel">one appointment.</span></h2>
+    <p class="mt-5 text-navy/70 text-lg max-w-2xl mx-auto">Tell us your name, the patient's name (if different), and briefly why you'd like to see the doctor. We'll confirm a time within the hour during opening hours.</p>
+    <a href="https://wa.me/2348023456789?text=Hi,%20I%20want%20to%20book%20an%20appointment%20at%20Dr.%20Okonkwo%20Clinic" class="mt-8 wa-pulse inline-flex items-center gap-3 bg-wa hover:bg-wadark text-white font-semibold px-7 py-4 rounded-full text-lg transition">
+      <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+      Book on WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer class="border-t border-sky/20 bg-mist2/40">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-10 grid sm:grid-cols-2 gap-4 text-sm text-navy/65 items-center">
+    <div class="flex items-center gap-2"><span class="text-sky font-display text-xl">✛</span><span class="font-display text-navy">Dr. Okonkwo Family Clinic</span></div>
+    <div class="text-center sm:text-right">&copy; 2026 · Wuse II, Abuja · Serving families since 2014</div>
+  </div>
+  <div class="border-t border-sky/15 bg-navy text-mist/80 text-xs py-4 px-5 text-center">
+    Website by <a href="index.html" class="text-gold font-semibold hover:text-mist">Shiktra Wudiri David</a> · <a href="https://wa.me/234XXXXXXXXXX?text=Hi%20Shiktra,%20I%20want%20a%20website%20for%20my%20business" class="text-gold font-semibold hover:text-mist">WhatsApp me for yours</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348023456789?text=Hi,%20I%20want%20to%20book%20an%20appointment%20at%20Dr.%20Okonkwo%20Clinic" aria-label="Book appointment on WhatsApp" class="float-wa wa-pulse fixed right-5 z-50 bg-wa hover:bg-wadark text-white rounded-full w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center transition">
+  <svg viewBox="0 0 24 24" class="w-7 h-7 sm:w-8 sm:h-8 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+</a>
+
+<script>
+  const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

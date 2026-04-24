@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abuja Heights Realty — Homes & Investments in FCT | Sample by Shiktra Wudiri David</title>
+<meta name="description" content="Sample real estate website built by Shiktra Wudiri David — featured homes, apartments and land in Abuja. Serious properties, serious agents, direct WhatsApp enquiries." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { colors: { forest: '#0F2E24', forest2: '#1A4033', sage: '#6B8E75', bone: '#F7F3EC', bone2: '#EFE8DB', sand: '#D9C9A8', terracotta: '#B8552E', gold: '#B8903B', wa: '#25D366', wadark: '#128C7E' }, fontFamily: { display: ['"Cormorant Garamond"', 'Georgia', 'serif'], sans: ['Inter', 'system-ui', 'sans-serif'] } } } };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #F7F3EC; color: #0F2E24; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: #B8903B; }
+  .display-italic { font-style: italic; font-weight: 500; }
+  .hair-divider { height: 1px; background: linear-gradient(to right, transparent, #B8903B 20%, #B8903B 80%, transparent); opacity: 0.35; }
+  @keyframes waPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55), 0 10px 30px -8px rgba(18, 140, 126, 0.5); } 50% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0), 0 10px 30px -8px rgba(18, 140, 126, 0.5); } }
+  .wa-pulse { animation: waPulse 2.4s ease-in-out infinite; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-up { animation: fadeUp 0.9s ease-out both; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .float-wa { bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); }
+  .nav-dark { background: rgba(15, 46, 36, 0.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(184, 144, 59, 0.2); }
+  .listing-card { transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease; }
+  .listing-card:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -20px rgba(15, 46, 36, 0.3); }
+  .listing-card img { transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .listing-card:hover img { transform: scale(1.06); }
+  .builder-banner { background: #0F2E24; }
+  .hero-bg { background: linear-gradient(135deg, #0F2E24 0%, #1A4033 60%, #0F2E24 100%); }
+  .stat-card { background: rgba(247, 243, 236, 0.08); border: 1px solid rgba(184, 144, 59, 0.3); }
+</style>
+</head>
+<body>
+
+<div class="builder-banner text-bone text-center text-xs py-2 px-4">
+  Sample website · <a href="index.html" class="underline hover:text-sand font-semibold">← Back to Shiktra's portfolio</a>
+</div>
+
+<nav class="nav-dark sticky top-0 inset-x-0 z-40 text-bone">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2">
+      <span class="text-gold font-display text-3xl leading-none">△</span>
+      <span class="font-display text-bone text-lg sm:text-xl tracking-tight">Abuja Heights <span class="display-italic text-sand">Realty</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-sm text-bone/80 font-medium">
+      <a href="#listings" class="hover:text-gold transition">Listings</a>
+      <a href="#services" class="hover:text-gold transition">Services</a>
+      <a href="#areas" class="hover:text-gold transition">Areas</a>
+      <a href="#about" class="hover:text-gold transition">About</a>
+      <a href="#contact" class="hover:text-gold transition">Contact</a>
+    </div>
+    <a href="https://wa.me/2348034567890?text=Hi,%20I%20want%20to%20enquire%20about%20a%20property" class="hidden sm:inline-flex items-center gap-2 bg-wa hover:bg-wadark text-white text-sm font-semibold px-4 py-2 rounded-full transition">
+      <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+      Enquire
+    </a>
+  </div>
+</nav>
+
+<header id="top" class="hero-bg text-bone relative overflow-hidden">
+  <div aria-hidden="true" class="absolute inset-0 opacity-30">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80" alt="" class="w-full h-full object-cover" />
+  </div>
+  <div aria-hidden="true" class="absolute inset-0 bg-forest/70"></div>
+
+  <div class="relative max-w-6xl mx-auto px-5 sm:px-8 py-24 sm:py-36">
+    <div class="max-w-3xl fade-up">
+      <span class="eyebrow text-gold">Federal Capital Territory</span>
+      <h1 class="mt-5 font-display text-bone text-[2.8rem] leading-[1.02] sm:text-6xl lg:text-7xl tracking-tight">
+        Your next address,<br/>
+        <span class="display-italic text-sand">in a city that moves.</span>
+      </h1>
+      <p class="mt-7 text-bone/85 text-lg sm:text-xl max-w-2xl leading-relaxed">
+        Homes, apartments and serviced plots across Abuja — from Maitama townhouses to Lugbe land banks. Hand-picked listings, honest prices, direct negotiations.
+      </p>
+      <div class="mt-10 flex flex-wrap items-center gap-4">
+        <a href="https://wa.me/2348034567890?text=Hi,%20I%20want%20to%20enquire%20about%20a%20property" class="wa-pulse inline-flex items-center gap-3 bg-wa hover:bg-wadark text-white font-semibold px-7 py-4 rounded-full text-base sm:text-lg transition">
+          <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+          Talk to an agent
+        </a>
+        <a href="#listings" class="inline-flex items-center gap-2 text-bone font-semibold underline underline-offset-8 decoration-gold decoration-2 hover:text-gold transition">
+          Browse listings &rarr;
+        </a>
+      </div>
+      <div class="mt-14 grid grid-cols-3 gap-4 max-w-2xl">
+        <div class="stat-card rounded-2xl p-5">
+          <div class="font-display text-3xl sm:text-4xl text-gold">120+</div>
+          <div class="text-bone/70 text-xs sm:text-sm mt-1 tracking-wider uppercase">Active listings</div>
+        </div>
+        <div class="stat-card rounded-2xl p-5">
+          <div class="font-display text-3xl sm:text-4xl text-gold">10 yrs</div>
+          <div class="text-bone/70 text-xs sm:text-sm mt-1 tracking-wider uppercase">In the Abuja market</div>
+        </div>
+        <div class="stat-card rounded-2xl p-5">
+          <div class="font-display text-3xl sm:text-4xl text-gold">C of O</div>
+          <div class="text-bone/70 text-xs sm:text-sm mt-1 tracking-wider uppercase">Title-verified only</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="listings" class="py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="flex items-end justify-between gap-6 flex-wrap reveal">
+      <div class="max-w-xl">
+        <span class="eyebrow">Featured Listings</span>
+        <h2 class="mt-3 font-display text-forest text-4xl sm:text-5xl leading-tight">Properties, <span class="display-italic text-sage">hand-selected this week.</span></h2>
+      </div>
+      <a href="https://wa.me/2348034567890?text=Hi,%20I%20want%20the%20full%20list%20of%20available%20properties" class="text-forest font-semibold underline underline-offset-8 decoration-gold decoration-2 hover:text-gold transition">Request full list &rarr;</a>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article class="listing-card bg-white rounded-2xl overflow-hidden border border-forest/10">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="4-Bedroom townhouse" class="w-full h-full object-cover" />
+          <span class="absolute top-4 left-4 bg-forest text-bone text-[10px] tracking-widest font-bold px-3 py-1.5 rounded-full uppercase">For Sale</span>
+          <span class="absolute top-4 right-4 bg-gold text-forest text-[10px] tracking-widest font-bold px-3 py-1.5 rounded-full uppercase">New</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between gap-3">
+            <h3 class="font-display text-forest text-2xl leading-tight">4-Bedroom Townhouse</h3>
+            <span class="font-display text-gold text-xl whitespace-nowrap">₦180M</span>
+          </div>
+          <p class="text-sm text-forest/60 mt-1">Maitama Extension, Abuja</p>
+          <div class="mt-4 flex gap-4 text-xs text-forest/70 pb-4 border-b border-forest/10">
+            <span>🛏 4 beds</span><span>🚿 5 baths</span><span>⌂ 340 sqm</span>
+          </div>
+          <a href="https://wa.me/2348034567890?text=Hi,%20I'm%20interested%20in%20the%204-Bedroom%20Townhouse%20in%20Maitama" class="mt-4 inline-flex items-center gap-2 text-forest font-semibold text-sm hover:text-gold transition">
+            Enquire on WhatsApp &rarr;
+          </a>
+        </div>
+      </article>
+
+      <article class="listing-card bg-white rounded-2xl overflow-hidden border border-forest/10">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="3-Bedroom apartment" class="w-full h-full object-cover" />
+          <span class="absolute top-4 left-4 bg-terracotta text-bone text-[10px] tracking-widest font-bold px-3 py-1.5 rounded-full uppercase">For Rent</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between gap-3">
+            <h3 class="font-display text-forest text-2xl leading-tight">3-Bed Serviced Apartment</h3>
+            <span class="font-display text-gold text-xl whitespace-nowrap">₦8M/yr</span>
+          </div>
+          <p class="text-sm text-forest/60 mt-1">Wuse II, Abuja</p>
+          <div class="mt-4 flex gap-4 text-xs text-forest/70 pb-4 border-b border-forest/10">
+            <span>🛏 3 beds</span><span>🚿 3 baths</span><span>⌂ 180 sqm</span>
+          </div>
+          <a href="https://wa.me/2348034567890?text=Hi,%20I'm%20interested%20in%20the%203-Bed%20Serviced%20Apartment%20in%20Wuse%20II" class="mt-4 inline-flex items-center gap-2 text-forest font-semibold text-sm hover:text-gold transition">
+            Enquire on WhatsApp &rarr;
+          </a>
+        </div>
+      </article>
+
+      <article class="listing-card bg-white rounded-2xl overflow-hidden border border-forest/10">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80" alt="5-Bedroom duplex" class="w-full h-full object-cover" />
+          <span class="absolute top-4 left-4 bg-forest text-bone text-[10px] tracking-widest font-bold px-3 py-1.5 rounded-full uppercase">For Sale</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between gap-3">
+            <h3 class="font-display text-forest text-2xl leading-tight">5-Bedroom Detached Duplex</h3>
+            <span class="font-display text-gold text-xl whitespace-nowrap">₦350M</span>
+          </div>
+          <p class="text-sm text-forest/60 mt-1">Asokoro, Abuja</p>
+          <div class="mt-4 flex gap-4 text-xs text-forest/70 pb-4 border-b border-forest/10">
+            <span>🛏 5 beds</span><span>🚿 6 baths</span><span>⌂ 600 sqm</span>
+          </div>
+          <a href="https://wa.me/2348034567890?text=Hi,%20I'm%20interested%20in%20the%205-Bedroom%20Duplex%20in%20Asokoro" class="mt-4 inline-flex items-center gap-2 text-forest font-semibold text-sm hover:text-gold transition">
+            Enquire on WhatsApp &rarr;
+          </a>
+        </div>
+      </article>
+
+      <article class="listing-card bg-white rounded-2xl overflow-hidden border border-forest/10">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80" alt="2-Bedroom apartment" class="w-full h-full object-cover" />
+          <span class="absolute top-4 left-4 bg-terracotta text-bone text-[10px] tracking-widest font-bold px-3 py-1.5 rounded-full uppercase">For Rent</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between gap-3">
+            <h3 class="font-display text-forest text-2xl leading-tight">2-Bedroom Flat</h3>
+            <span class="font-display text-gold text-xl whitespace-nowrap">₦3.5M/yr</span>
+          </div>
+          <p class="text-sm text-forest/60 mt-1">Jahi District, Abuja</p>
+          <div class="mt-4 flex gap-4 text-xs text-forest/70 pb-4 border-b border-forest/10">
+            <span>🛏 2 beds</span><span>🚿 2 baths</span><span>⌂ 110 sqm</span>
+          </div>
+          <a href="https://wa.me/2348034567890?text=Hi,%20I'm%20interested%20in%20the%202-Bedroom%20Flat%20in%20Jahi" class="mt-4 inline-flex items-center gap-2 text-forest font-semibold text-sm hover:text-gold transition">
+            Enquire on WhatsApp &rarr;
+          </a>
+        </div>
+      </article>
+
+      <article class="listing-card bg-white rounded-2xl overflow-hidden border border-forest/10">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80" alt="Land plot" class="w-full h-full object-cover" />
+          <span class="absolute top-4 left-4 bg-forest text-bone text-[10px] tracking-widest font-bold px-3 py-1.5 rounded-full uppercase">Land</span>
+          <span class="absolute top-4 right-4 bg-gold text-forest text-[10px] tracking-widest font-bold px-3 py-1.5 rounded-full uppercase">C of O</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between gap-3">
+            <h3 class="font-display text-forest text-2xl leading-tight">600 sqm Plot</h3>
+            <span class="font-display text-gold text-xl whitespace-nowrap">₦45M</span>
+          </div>
+          <p class="text-sm text-forest/60 mt-1">Lugbe, Abuja</p>
+          <div class="mt-4 flex gap-4 text-xs text-forest/70 pb-4 border-b border-forest/10">
+            <span>⌂ 600 sqm</span><span>🏛 C of O</span><span>🛣 Tarred road</span>
+          </div>
+          <a href="https://wa.me/2348034567890?text=Hi,%20I'm%20interested%20in%20the%20600sqm%20plot%20in%20Lugbe" class="mt-4 inline-flex items-center gap-2 text-forest font-semibold text-sm hover:text-gold transition">
+            Enquire on WhatsApp &rarr;
+          </a>
+        </div>
+      </article>
+
+      <article class="listing-card bg-forest text-bone rounded-2xl overflow-hidden border border-gold/40 relative">
+        <div aria-hidden="true" class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-gold/15 blur-2xl"></div>
+        <div class="relative p-8 h-full flex flex-col justify-center">
+          <span class="eyebrow text-gold">Off-market</span>
+          <h3 class="mt-3 font-display text-bone text-2xl leading-snug">Don't see what you need?</h3>
+          <p class="mt-3 text-bone/75 text-sm leading-relaxed">Tell us your budget, preferred area, and timeline. We'll match you to listings that never hit the public market.</p>
+          <a href="https://wa.me/2348034567890?text=Hi,%20I'm%20looking%20for%20a%20specific%20property%20in%20Abuja" class="mt-6 inline-flex items-center gap-2 text-gold font-semibold text-sm hover:text-sand transition">
+            Tell us what you want &rarr;
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<section id="services" class="py-20 sm:py-28 bg-bone2/50">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl reveal">
+      <span class="eyebrow">What we do</span>
+      <h2 class="mt-3 font-display text-forest text-4xl sm:text-5xl leading-tight">More than <span class="display-italic text-sage">buying and selling.</span></h2>
+    </div>
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="reveal bg-white rounded-2xl p-7 border border-forest/10">
+        <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center font-display text-2xl">⌂</div>
+        <h3 class="mt-5 font-display text-forest text-xl">Sales</h3>
+        <p class="mt-3 text-forest/70 text-sm leading-relaxed">Homes, duplexes, terraces. Title-verified listings only. Transparent agency fees, no hidden middlemen.</p>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-7 border border-forest/10">
+        <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center font-display text-2xl">♁</div>
+        <h3 class="mt-5 font-display text-forest text-xl">Rentals</h3>
+        <p class="mt-3 text-forest/70 text-sm leading-relaxed">Furnished, unfurnished, serviced. Annual leases with clear terms — we represent tenants and landlords alike.</p>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-7 border border-forest/10">
+        <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center font-display text-2xl">▱</div>
+        <h3 class="mt-5 font-display text-forest text-xl">Land</h3>
+        <p class="mt-3 text-forest/70 text-sm leading-relaxed">Residential and commercial plots across FCT. C of O and R of O verified before we ever list them.</p>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-7 border border-forest/10">
+        <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center font-display text-2xl">⚖</div>
+        <h3 class="mt-5 font-display text-forest text-xl">Property Management</h3>
+        <p class="mt-3 text-forest/70 text-sm leading-relaxed">Rent collection, tenant vetting, maintenance coordination — for landlords who want the income without the headaches.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<section id="areas" class="py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl reveal">
+      <span class="eyebrow">Where we work</span>
+      <h2 class="mt-3 font-display text-forest text-4xl sm:text-5xl leading-tight">Areas we <span class="display-italic text-sage">know intimately.</span></h2>
+      <p class="mt-5 text-forest/70 text-lg">We don't pretend to know the whole country. We know these neighbourhoods, their pricing, their growth patterns, their people.</p>
+    </div>
+    <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Maitama</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Asokoro</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Wuse II</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Garki</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Jahi</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Gwarinpa</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Katampe</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Lugbe</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Life Camp</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Apo</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Bwari</div>
+      <div class="bg-forest/5 border border-forest/10 rounded-xl px-5 py-4 font-display text-forest text-lg">Kubwa</div>
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<section id="about" class="py-20 sm:py-28 bg-bone2/50">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 reveal">
+        <span class="eyebrow">About us</span>
+        <h2 class="mt-3 font-display text-forest text-4xl sm:text-5xl leading-tight">Ten years in Abuja, <span class="display-italic text-sage">one address book.</span></h2>
+        <div class="mt-6 space-y-5 text-forest/75 text-lg leading-relaxed">
+          <p>Abuja Heights Realty was started by three agents who got tired of the industry's shortcuts — shaky titles, inflated prices, ghost landlords. We built the firm on a simple rule: if we wouldn't buy it ourselves, we don't list it.</p>
+          <p>We represent sellers, buyers, landlords and tenants. Our fee is negotiated upfront. We tell you what we think is overpriced, what's a steal, and where the next wave of growth is headed. Then you decide.</p>
+          <p class="font-display italic text-gold text-xl">"A good agent saves you months of wasted viewings and millions of naira."</p>
+        </div>
+      </div>
+      <div class="lg:col-span-5 reveal">
+        <div class="relative">
+          <div class="absolute -inset-3 bg-gold/20 rounded-[2rem] -rotate-3"></div>
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Abuja Heights office" class="relative rounded-[2rem] w-full h-[440px] object-cover border border-gold/30 shadow-xl" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<section id="contact" class="py-20 sm:py-28">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="bg-forest text-bone rounded-3xl p-10 sm:p-14 border border-gold/40 relative overflow-hidden">
+      <div aria-hidden="true" class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-gold/15 blur-3xl"></div>
+      <div aria-hidden="true" class="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-terracotta/15 blur-3xl"></div>
+      <div class="relative grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <span class="eyebrow text-gold">Ready to view?</span>
+          <h2 class="mt-3 font-display text-bone text-4xl sm:text-5xl leading-tight">Tell us what <span class="display-italic text-sand">you're looking for.</span></h2>
+          <p class="mt-5 text-bone/75 text-lg max-w-lg">Budget, area, bedrooms, timeline. The more detail you give us, the faster we can match you to a home. WhatsApp is fastest.</p>
+          <a href="https://wa.me/2348034567890?text=Hi,%20I'm%20looking%20for%20a%20property%20in%20Abuja" class="mt-8 wa-pulse inline-flex items-center gap-3 bg-wa hover:bg-wadark text-white font-semibold px-7 py-4 rounded-full text-lg transition">
+            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+            Message us on WhatsApp
+          </a>
+        </div>
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-bone/5 border border-bone/15 rounded-2xl p-5">
+            <div class="eyebrow text-gold">Office</div>
+            <div class="mt-2 font-display text-xl text-bone">Plot 234, Ademola Adetokunbo Crescent</div>
+            <div class="text-bone/65 text-sm">Wuse II, Abuja</div>
+          </div>
+          <div class="bg-bone/5 border border-bone/15 rounded-2xl p-5">
+            <div class="eyebrow text-gold">Reach us</div>
+            <a href="tel:+2348034567890" class="block mt-2 font-display text-xl text-bone hover:text-gold">+234 803 456 7890</a>
+            <a href="mailto:hello@abujaheights.ng" class="block text-bone/65 text-sm hover:text-gold">hello@abujaheights.ng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-gold/20 bg-bone2/40">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-10 grid sm:grid-cols-2 gap-4 text-sm text-forest/65 items-center">
+    <div class="flex items-center gap-2"><span class="text-gold font-display text-2xl">△</span><span class="font-display text-forest">Abuja Heights Realty</span></div>
+    <div class="text-center sm:text-right">&copy; 2026 · Wuse II, Abuja · A home-first realty firm</div>
+  </div>
+  <div class="border-t border-gold/15 bg-forest text-bone/80 text-xs py-4 px-5 text-center">
+    Website by <a href="index.html" class="text-gold font-semibold hover:text-bone">Shiktra Wudiri David</a> · <a href="https://wa.me/234XXXXXXXXXX?text=Hi%20Shiktra,%20I%20want%20a%20website%20for%20my%20business" class="text-gold font-semibold hover:text-bone">WhatsApp me for yours</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348034567890?text=Hi,%20I%20want%20to%20enquire%20about%20a%20property" aria-label="Enquire on WhatsApp" class="float-wa wa-pulse fixed right-5 z-50 bg-wa hover:bg-wadark text-white rounded-full w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center transition">
+  <svg viewBox="0 0 24 24" class="w-7 h-7 sm:w-8 sm:h-8 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+</a>
+
+<script>
+  const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

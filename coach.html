@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chika Eze — Career Coach | Sample by Shiktra Wudiri David</title>
+<meta name="description" content="Sample coach website built by Shiktra Wudiri David — one-on-one career coaching for ambitious professionals in Nigeria. Free discovery call on WhatsApp." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { colors: { clay: '#2E1E17', clay2: '#4A3328', sienna: '#A85A3C', rust: '#C97A52', peach: '#F5D3B8', butter: '#FBF4E8', butter2: '#F5E8D3', sage: '#6B8268', gold: '#D4A94E', wa: '#25D366', wadark: '#128C7E' }, fontFamily: { display: ['"DM Serif Display"', 'Georgia', 'serif'], sans: ['"DM Sans"', 'system-ui', 'sans-serif'] } } } };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #FBF4E8; color: #2E1E17; font-family: 'DM Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .eyebrow { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: #A85A3C; }
+  .display-italic { font-style: italic; }
+  .hair-divider { height: 1px; background: linear-gradient(to right, transparent, #A85A3C 20%, #A85A3C 80%, transparent); opacity: 0.3; }
+  @keyframes waPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55), 0 10px 30px -8px rgba(18, 140, 126, 0.5); } 50% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0), 0 10px 30px -8px rgba(18, 140, 126, 0.5); } }
+  .wa-pulse { animation: waPulse 2.4s ease-in-out infinite; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-up { animation: fadeUp 0.9s ease-out both; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .float-wa { bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); }
+  .nav-blur { backdrop-filter: saturate(140%) blur(10px); -webkit-backdrop-filter: saturate(140%) blur(10px); background: rgba(251, 244, 232, 0.85); border-bottom: 1px solid rgba(168, 90, 60, 0.15); }
+  .program-card { transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease; }
+  .program-card:hover { transform: translateY(-4px); box-shadow: 0 24px 50px -20px rgba(46, 30, 23, 0.25); }
+  .builder-banner { background: #2E1E17; }
+  .grain { background-image: radial-gradient(rgba(46, 30, 23, 0.03) 1px, transparent 1px), radial-gradient(rgba(168, 90, 60, 0.04) 1px, transparent 1px); background-size: 22px 22px, 38px 38px; background-position: 0 0, 11px 11px; }
+  .quote-mark { font-family: 'DM Serif Display', serif; font-size: 5rem; line-height: 0.6; color: #A85A3C; opacity: 0.3; }
+  .cred-pill { background: rgba(168, 90, 60, 0.08); border: 1px solid rgba(168, 90, 60, 0.2); color: #4A3328; }
+</style>
+</head>
+<body class="grain">
+
+<div class="builder-banner text-butter text-center text-xs py-2 px-4">
+  Sample website · <a href="index.html" class="underline hover:text-gold font-semibold">← Back to Shiktra's portfolio</a>
+</div>
+
+<nav class="nav-blur sticky top-0 inset-x-0 z-40">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2">
+      <span class="text-sienna font-display text-2xl leading-none">❋</span>
+      <span class="font-display text-clay text-xl sm:text-2xl tracking-tight">Chika <span class="display-italic text-sienna">Eze</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-sm text-clay/75 font-medium">
+      <a href="#about" class="hover:text-sienna transition">About</a>
+      <a href="#programs" class="hover:text-sienna transition">Programs</a>
+      <a href="#voices" class="hover:text-sienna transition">Stories</a>
+      <a href="#faq" class="hover:text-sienna transition">FAQ</a>
+      <a href="#contact" class="hover:text-sienna transition">Contact</a>
+    </div>
+    <a href="https://wa.me/2348045678901?text=Hi%20Chika,%20I'd%20like%20to%20book%20a%20free%20discovery%20call" class="hidden sm:inline-flex items-center gap-2 bg-wa hover:bg-wadark text-white text-sm font-semibold px-4 py-2 rounded-full transition">
+      <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+      Free discovery call
+    </a>
+  </div>
+</nav>
+
+<header id="top" class="relative pt-16 pb-20 sm:pt-24 sm:pb-28 overflow-hidden">
+  <div aria-hidden="true" class="absolute -top-20 -right-24 w-96 h-96 rounded-full bg-rust/10 blur-3xl"></div>
+  <div aria-hidden="true" class="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-sage/10 blur-3xl"></div>
+  <div class="relative max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7 fade-up order-2 lg:order-1">
+      <span class="eyebrow">Career Coach · Lagos & Abuja</span>
+      <h1 class="mt-5 font-display text-clay text-[2.8rem] leading-[1.02] sm:text-6xl lg:text-7xl tracking-tight">
+        You don't need<br/>
+        <span class="display-italic text-sienna">another course.</span><br/>
+        You need <span class="text-sienna">clarity.</span>
+      </h1>
+      <p class="mt-7 text-clay/75 text-lg sm:text-xl max-w-xl leading-relaxed">
+        One-on-one career coaching for ambitious Nigerian professionals ready to find their next role, negotiate their worth, or make the leap they keep postponing.
+      </p>
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="https://wa.me/2348045678901?text=Hi%20Chika,%20I'd%20like%20to%20book%20a%20free%20discovery%20call" class="wa-pulse inline-flex items-center gap-3 bg-wa hover:bg-wadark text-white font-semibold px-7 py-4 rounded-full text-base sm:text-lg transition">
+          <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+          Book a free 20-min call
+        </a>
+        <a href="#programs" class="inline-flex items-center gap-2 text-clay font-semibold underline underline-offset-8 decoration-sienna decoration-2 hover:text-sienna transition">
+          See programs &rarr;
+        </a>
+      </div>
+      <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
+        <span class="cred-pill rounded-full px-4 py-2 text-xs font-semibold tracking-wider">ICF CERTIFIED</span>
+        <span class="cred-pill rounded-full px-4 py-2 text-xs font-semibold tracking-wider">200+ CLIENTS COACHED</span>
+        <span class="cred-pill rounded-full px-4 py-2 text-xs font-semibold tracking-wider">12 YEARS IN HR</span>
+      </div>
+    </div>
+    <div class="lg:col-span-5 fade-up order-1 lg:order-2" style="animation-delay: 180ms;">
+      <div class="relative">
+        <div class="absolute -inset-4 bg-rust/15 rounded-full"></div>
+        <div class="absolute -inset-2 bg-peach/40 rounded-full"></div>
+        <div class="relative rounded-full overflow-hidden shadow-2xl shadow-clay/30 border-4 border-butter aspect-square">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Chika Eze" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute -bottom-2 -right-2 bg-butter border border-sienna/30 rounded-2xl shadow-lg px-5 py-4">
+          <div class="eyebrow">Next available</div>
+          <div class="font-display text-clay text-lg">This week</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<!-- Transformation callout -->
+<section class="py-16 sm:py-20">
+  <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center">
+    <span class="eyebrow">Who I work with</span>
+    <h2 class="mt-4 font-display text-clay text-3xl sm:text-4xl leading-tight">
+      Mid-career professionals who've hit a wall — <span class="display-italic text-sienna">and are ready to knock it down.</span>
+    </h2>
+    <div class="mt-10 grid sm:grid-cols-3 gap-5 text-left">
+      <div class="bg-butter2/60 rounded-2xl p-6 border border-sienna/15">
+        <div class="text-sienna font-display text-3xl">01</div>
+        <h3 class="mt-2 font-display text-clay text-xl leading-snug">The restless high-performer</h3>
+        <p class="mt-2 text-clay/70 text-sm">Doing well on paper, but the job doesn't fit anymore. You want a change but can't see the map.</p>
+      </div>
+      <div class="bg-butter2/60 rounded-2xl p-6 border border-sienna/15">
+        <div class="text-sienna font-display text-3xl">02</div>
+        <h3 class="mt-2 font-display text-clay text-xl leading-snug">The underpaid specialist</h3>
+        <p class="mt-2 text-clay/70 text-sm">You know you're worth more. You just don't know how to ask for it — or who to ask.</p>
+      </div>
+      <div class="bg-butter2/60 rounded-2xl p-6 border border-sienna/15">
+        <div class="text-sienna font-display text-3xl">03</div>
+        <h3 class="mt-2 font-display text-clay text-xl leading-snug">The returning professional</h3>
+        <p class="mt-2 text-clay/70 text-sm">A career break, a baby, a move. You're coming back — let's make sure the comeback is strong.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <div class="lg:col-span-5 reveal">
+      <div class="relative">
+        <div class="absolute -inset-2 bg-sage/20 rounded-3xl rotate-3"></div>
+        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80" alt="Chika Eze at work" class="relative rounded-3xl w-full h-[500px] object-cover border border-sienna/30 shadow-xl shadow-clay/15" />
+      </div>
+    </div>
+    <div class="lg:col-span-7 reveal">
+      <span class="eyebrow">About me</span>
+      <h2 class="mt-3 font-display text-clay text-4xl sm:text-5xl leading-tight">I've sat on both sides <span class="display-italic text-sienna">of the hiring table.</span></h2>
+      <div class="mt-6 space-y-5 text-clay/80 text-lg leading-relaxed">
+        <p>Before I coached, I hired. Twelve years in HR and talent across banking, consulting, and tech — from Lagos to London and back. I've reviewed over 10,000 CVs. I've made the offer; I've made the "no" call. I know what moves the needle, and what doesn't.</p>
+        <p>Now I use all of that to help one person at a time get unstuck. Real conversations, honest feedback, a plan you can actually follow on a Tuesday morning.</p>
+        <p class="font-display italic text-sienna text-xl">"Coaching is not cheerleading. It's asking you the questions you've been avoiding."</p>
+      </div>
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div class="p-4 rounded-xl bg-butter2/70 border border-sienna/15 text-center">
+          <div class="font-display text-2xl text-sienna">ICF</div>
+          <div class="text-xs text-clay/60 mt-1 tracking-wider uppercase">PCC Certified</div>
+        </div>
+        <div class="p-4 rounded-xl bg-butter2/70 border border-sienna/15 text-center">
+          <div class="font-display text-2xl text-sienna">200+</div>
+          <div class="text-xs text-clay/60 mt-1 tracking-wider uppercase">Clients</div>
+        </div>
+        <div class="p-4 rounded-xl bg-butter2/70 border border-sienna/15 text-center">
+          <div class="font-display text-2xl text-sienna">MSc</div>
+          <div class="text-xs text-clay/60 mt-1 tracking-wider uppercase">HR, LSE</div>
+        </div>
+        <div class="p-4 rounded-xl bg-butter2/70 border border-sienna/15 text-center">
+          <div class="font-display text-2xl text-sienna">4.9★</div>
+          <div class="text-xs text-clay/60 mt-1 tracking-wider uppercase">Client rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<!-- PROGRAMS -->
+<section id="programs" class="py-20 sm:py-28 bg-butter2/40">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl reveal">
+      <span class="eyebrow">Ways to work with me</span>
+      <h2 class="mt-3 font-display text-clay text-4xl sm:text-5xl leading-tight">Three paths. <span class="display-italic text-sienna">One outcome: clarity.</span></h2>
+      <p class="mt-5 text-clay/70 text-lg">Pick the one that fits where you are. Still not sure? Book a free discovery call and I'll tell you honestly which is right for you.</p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-6">
+
+      <div class="program-card reveal bg-butter rounded-3xl p-8 border border-sienna/20 flex flex-col">
+        <div class="eyebrow">Single Session</div>
+        <h3 class="mt-3 font-display text-clay text-3xl">The Reset</h3>
+        <p class="mt-4 text-clay/70 leading-relaxed">A 90-minute deep-dive when you're stuck on one specific thing — a job offer, a resignation, a difficult conversation, a CV that isn't working.</p>
+        <ul class="mt-6 space-y-3 text-sm text-clay/75">
+          <li class="flex gap-2"><span class="text-sienna font-bold">✓</span> 90-minute one-on-one session</li>
+          <li class="flex gap-2"><span class="text-sienna font-bold">✓</span> Pre-session prep questionnaire</li>
+          <li class="flex gap-2"><span class="text-sienna font-bold">✓</span> Written action plan afterwards</li>
+          <li class="flex gap-2"><span class="text-sienna font-bold">✓</span> Two weeks of WhatsApp follow-up</li>
+        </ul>
+        <div class="mt-7 pt-6 border-t border-sienna/20">
+          <div class="font-display text-clay text-3xl">₦75,000</div>
+          <div class="text-xs text-clay/60 mt-1 tracking-wider uppercase">One-time</div>
+        </div>
+        <a href="https://wa.me/2348045678901?text=Hi%20Chika,%20I'm%20interested%20in%20The%20Reset%20(single%20session)" class="mt-6 inline-flex justify-center items-center gap-2 bg-clay hover:bg-clay2 text-butter font-semibold px-5 py-3 rounded-full transition">
+            Book The Reset
+          </a>
+      </div>
+
+      <div class="program-card reveal bg-clay text-butter rounded-3xl p-8 border border-gold/40 flex flex-col relative overflow-hidden">
+        <div aria-hidden="true" class="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-gold/15 blur-3xl"></div>
+        <div class="relative flex flex-col h-full">
+          <div class="flex items-center justify-between">
+            <span class="eyebrow text-gold">Most Popular</span>
+            <span class="text-[10px] tracking-widest font-bold text-clay bg-gold px-3 py-1 rounded-full">8 WEEKS</span>
+          </div>
+          <h3 class="mt-3 font-display text-butter text-3xl">The Transition</h3>
+          <p class="mt-4 text-butter/80 leading-relaxed">The full program — when you're changing role, changing industry, or coming back from a break. Eight weeks, structured, accountable.</p>
+          <ul class="mt-6 space-y-3 text-sm text-butter/85">
+            <li class="flex gap-2"><span class="text-gold font-bold">✓</span> 8 weekly coaching sessions (60 min)</li>
+            <li class="flex gap-2"><span class="text-gold font-bold">✓</span> CV + LinkedIn rewrite</li>
+            <li class="flex gap-2"><span class="text-gold font-bold">✓</span> Interview prep & mock interviews</li>
+            <li class="flex gap-2"><span class="text-gold font-bold">✓</span> Salary negotiation playbook</li>
+            <li class="flex gap-2"><span class="text-gold font-bold">✓</span> Unlimited WhatsApp access</li>
+          </ul>
+          <div class="mt-7 pt-6 border-t border-gold/30">
+            <div class="font-display text-butter text-3xl">₦450,000</div>
+            <div class="text-xs text-butter/60 mt-1 tracking-wider uppercase">Or 3 payments of ₦160,000</div>
+          </div>
+          <a href="https://wa.me/2348045678901?text=Hi%20Chika,%20I'm%20interested%20in%20The%20Transition%20program" class="mt-6 inline-flex justify-center items-center gap-2 bg-gold hover:bg-rust text-clay font-semibold px-5 py-3 rounded-full transition">
+            Apply for The Transition
+          </a>
+        </div>
+      </div>
+
+      <div class="program-card reveal bg-butter rounded-3xl p-8 border border-sienna/20 flex flex-col">
+        <div class="eyebrow">Group Program</div>
+        <h3 class="mt-3 font-display text-clay text-3xl">The Cohort</h3>
+        <p class="mt-4 text-clay/70 leading-relaxed">Six women, six weeks, one shared journey. Monthly cohort for professionals who want community with their coaching. Runs quarterly.</p>
+        <ul class="mt-6 space-y-3 text-sm text-clay/75">
+          <li class="flex gap-2"><span class="text-sienna font-bold">✓</span> 6 weekly group sessions (90 min)</li>
+          <li class="flex gap-2"><span class="text-sienna font-bold">✓</span> 2 private one-on-ones with me</li>
+          <li class="flex gap-2"><span class="text-sienna font-bold">✓</span> Peer accountability pairs</li>
+          <li class="flex gap-2"><span class="text-sienna font-bold">✓</span> Private WhatsApp group</li>
+        </ul>
+        <div class="mt-7 pt-6 border-t border-sienna/20">
+          <div class="font-display text-clay text-3xl">₦180,000</div>
+          <div class="text-xs text-clay/60 mt-1 tracking-wider uppercase">Per cohort · 6 spots</div>
+        </div>
+        <a href="https://wa.me/2348045678901?text=Hi%20Chika,%20I'm%20interested%20in%20The%20Cohort" class="mt-6 inline-flex justify-center items-center gap-2 bg-clay hover:bg-clay2 text-butter font-semibold px-5 py-3 rounded-full transition">
+            Join the waitlist
+        </a>
+      </div>
+
+    </div>
+    <p class="mt-10 text-center text-clay/60 text-sm italic">Corporate coaching retainers available on request. Rates are negotiated per engagement.</p>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<!-- STORIES / TESTIMONIALS -->
+<section id="voices" class="py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl reveal">
+      <span class="eyebrow">Client stories</span>
+      <h2 class="mt-3 font-display text-clay text-4xl sm:text-5xl leading-tight">What changed, <span class="display-italic text-sienna">in their own words.</span></h2>
+    </div>
+    <div class="mt-14 grid md:grid-cols-2 gap-6">
+
+      <figure class="reveal bg-butter rounded-3xl p-8 border border-sienna/20 shadow-sm">
+        <div class="quote-mark">"</div>
+        <blockquote class="mt-2 font-display text-clay text-xl leading-relaxed">I came to Chika burnt out and convinced I had to start from zero. Six weeks later I had a new role, 42% higher base, at a company I actually believe in.</blockquote>
+        <figcaption class="mt-6 flex items-center gap-4 pt-6 border-t border-sienna/15">
+          <div class="w-12 h-12 rounded-full bg-sienna text-butter flex items-center justify-center font-display text-xl">A</div>
+          <div>
+            <div class="font-semibold text-clay">Amaka N.</div>
+            <div class="text-xs text-clay/60 tracking-wider uppercase">Product Manager · Lagos</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal bg-butter rounded-3xl p-8 border border-sienna/20 shadow-sm">
+        <div class="quote-mark">"</div>
+        <blockquote class="mt-2 font-display text-clay text-xl leading-relaxed">After my maternity break I was sure nobody would take me seriously. Chika reframed the whole story. I got offers from three of the four roles I applied for.</blockquote>
+        <figcaption class="mt-6 flex items-center gap-4 pt-6 border-t border-sienna/15">
+          <div class="w-12 h-12 rounded-full bg-sage text-butter flex items-center justify-center font-display text-xl">T</div>
+          <div>
+            <div class="font-semibold text-clay">Tolu A.</div>
+            <div class="text-xs text-clay/60 tracking-wider uppercase">Finance Director · Abuja</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal bg-clay text-butter rounded-3xl p-8 border border-gold/30 shadow-sm relative overflow-hidden">
+        <div aria-hidden="true" class="absolute -bottom-12 -right-12 w-48 h-48 rounded-full bg-gold/15 blur-2xl"></div>
+        <div class="quote-mark text-gold/50">"</div>
+        <blockquote class="mt-2 font-display text-butter text-xl leading-relaxed relative">She told me things my friends wouldn't. Painful and freeing. I left tech, started my own consultancy, and I'm making twice what I used to.</blockquote>
+        <figcaption class="mt-6 flex items-center gap-4 pt-6 border-t border-gold/20 relative">
+          <div class="w-12 h-12 rounded-full bg-gold text-clay flex items-center justify-center font-display text-xl">E</div>
+          <div>
+            <div class="font-semibold">Emeka O.</div>
+            <div class="text-xs text-gold/80 tracking-wider uppercase">Former Engineering Lead · Now Consultant</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal bg-butter rounded-3xl p-8 border border-sienna/20 shadow-sm">
+        <div class="quote-mark">"</div>
+        <blockquote class="mt-2 font-display text-clay text-xl leading-relaxed">I'd read every career book and watched every YouTube video. What I needed was one person to tell me the truth about my CV. Chika did — and everything changed.</blockquote>
+        <figcaption class="mt-6 flex items-center gap-4 pt-6 border-t border-sienna/15">
+          <div class="w-12 h-12 rounded-full bg-rust text-butter flex items-center justify-center font-display text-xl">F</div>
+          <div>
+            <div class="font-semibold text-clay">Funmi B.</div>
+            <div class="text-xs text-clay/60 tracking-wider uppercase">Senior Associate · Law Firm, Lagos</div>
+          </div>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 sm:py-28 bg-butter2/40">
+  <div class="max-w-4xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl reveal">
+      <span class="eyebrow">Questions</span>
+      <h2 class="mt-3 font-display text-clay text-4xl sm:text-5xl leading-tight">Things people ask, <span class="display-italic text-sienna">before they book.</span></h2>
+    </div>
+    <div class="mt-12 space-y-4">
+      <details class="group bg-butter rounded-2xl border border-sienna/15 overflow-hidden reveal">
+        <summary class="cursor-pointer px-6 py-5 font-display text-clay text-lg flex items-center justify-between">
+          How is a free discovery call different from a paid session?
+          <span class="text-sienna text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-clay/75 leading-relaxed">
+          The free call is 20 minutes on WhatsApp. It's a mutual fit check — you share what you're dealing with, I tell you if and how I can help. No coaching happens. If we're a good match, we discuss which program fits. If we're not, I'll refer you to someone who can help.
+        </div>
+      </details>
+      <details class="group bg-butter rounded-2xl border border-sienna/15 overflow-hidden reveal">
+        <summary class="cursor-pointer px-6 py-5 font-display text-clay text-lg flex items-center justify-between">
+          Do you work with clients outside Nigeria?
+          <span class="text-sienna text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-clay/75 leading-relaxed">
+          Yes. Roughly a third of my clients are Nigerians abroad or diaspora professionals planning to relocate. All sessions are on Zoom or Google Meet. Payments in naira, USD, or GBP.
+        </div>
+      </details>
+      <details class="group bg-butter rounded-2xl border border-sienna/15 overflow-hidden reveal">
+        <summary class="cursor-pointer px-6 py-5 font-display text-clay text-lg flex items-center justify-between">
+          I can't decide between The Reset and The Transition. How do I know?
+          <span class="text-sienna text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-clay/75 leading-relaxed">
+          Book the free discovery call — that's literally what it's for. As a rule of thumb: if you have one specific decision to make, The Reset is enough. If you're repositioning, changing industries, or rebuilding a CV, The Transition will get you further.
+        </div>
+      </details>
+      <details class="group bg-butter rounded-2xl border border-sienna/15 overflow-hidden reveal">
+        <summary class="cursor-pointer px-6 py-5 font-display text-clay text-lg flex items-center justify-between">
+          Do you offer refunds?
+          <span class="text-sienna text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-clay/75 leading-relaxed">
+          The Reset is non-refundable once scheduled, but can be rescheduled with 48 hours' notice. The Transition has a 7-day, no-questions-asked refund window after the first session. The Cohort is refundable up to one week before the cohort starts.
+        </div>
+      </details>
+      <details class="group bg-butter rounded-2xl border border-sienna/15 overflow-hidden reveal">
+        <summary class="cursor-pointer px-6 py-5 font-display text-clay text-lg flex items-center justify-between">
+          Is this only for senior professionals?
+          <span class="text-sienna text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-clay/75 leading-relaxed">
+          No — I work with people at every stage, but my approach assumes you've been in the workforce for at least three years and have real decisions to make. If you're a fresh graduate looking for your first role, there are better and more affordable resources than me.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="hair-divider max-w-5xl mx-auto"></div>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 sm:py-28">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="bg-clay text-butter rounded-3xl p-10 sm:p-14 border border-gold/40 relative overflow-hidden">
+      <div aria-hidden="true" class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-gold/15 blur-3xl"></div>
+      <div aria-hidden="true" class="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-rust/20 blur-3xl"></div>
+      <div class="relative text-center max-w-2xl mx-auto">
+        <span class="eyebrow text-gold">Start here</span>
+        <h2 class="mt-3 font-display text-butter text-4xl sm:text-5xl leading-tight">Free 20-minute <span class="display-italic text-peach">discovery call.</span></h2>
+        <p class="mt-5 text-butter/75 text-lg">No commitment, no sales pitch. Tell me what's on your plate, I'll tell you if I can help. If I can't, I'll point you to someone who can.</p>
+        <a href="https://wa.me/2348045678901?text=Hi%20Chika,%20I'd%20like%20to%20book%20a%20free%20discovery%20call" class="mt-8 wa-pulse inline-flex items-center gap-3 bg-wa hover:bg-wadark text-white font-semibold px-7 py-4 rounded-full text-lg transition">
+          <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+          Book my free call
+        </a>
+        <div class="mt-10 grid sm:grid-cols-3 gap-4 pt-8 border-t border-gold/20 text-sm">
+          <div>
+            <div class="eyebrow text-gold">WhatsApp</div>
+            <a href="tel:+2348045678901" class="mt-2 block font-display text-xl text-butter hover:text-gold">+234 804 567 8901</a>
+          </div>
+          <div>
+            <div class="eyebrow text-gold">Email</div>
+            <a href="mailto:hello@chikaeze.com" class="mt-2 block font-display text-xl text-butter hover:text-gold break-all">hello@chikaeze.com</a>
+          </div>
+          <div>
+            <div class="eyebrow text-gold">Based in</div>
+            <div class="mt-2 font-display text-xl text-butter">Lagos & Abuja</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-sienna/15 bg-butter2/40">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-10 grid sm:grid-cols-2 gap-4 text-sm text-clay/65 items-center">
+    <div class="flex items-center gap-2"><span class="text-sienna font-display text-xl">❋</span><span class="font-display text-clay">Chika Eze · Career Coach</span></div>
+    <div class="text-center sm:text-right">&copy; 2026 · Lagos & Abuja · Honest coaching, grown-up conversations</div>
+  </div>
+  <div class="border-t border-sienna/15 bg-clay text-butter/80 text-xs py-4 px-5 text-center">
+    Website by <a href="index.html" class="text-gold font-semibold hover:text-butter">Shiktra Wudiri David</a> · <a href="https://wa.me/234XXXXXXXXXX?text=Hi%20Shiktra,%20I%20want%20a%20website%20for%20my%20business" class="text-gold font-semibold hover:text-butter">WhatsApp me for yours</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348045678901?text=Hi%20Chika,%20I'd%20like%20to%20book%20a%20free%20discovery%20call" aria-label="Book discovery call on WhatsApp" class="float-wa wa-pulse fixed right-5 z-50 bg-wa hover:bg-wadark text-white rounded-full w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center transition">
+  <svg viewBox="0 0 24 24" class="w-7 h-7 sm:w-8 sm:h-8 fill-current"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.74 11.74 0 0 0 1.6 5.93L0 24l6.4-1.68a11.84 11.84 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.83 0-3.16-1.23-6.13-3.36-8.45ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.01-3.7-.23-.38a9.65 9.65 0 0 1-1.48-5.1c0-5.34 4.35-9.68 9.79-9.68 2.6 0 5.04 1.01 6.88 2.85a9.66 9.66 0 0 1 2.85 6.84c0 5.34-4.36 9.73-9.74 9.73Z"/></svg>
+</a>
+
+<script>
+  const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
